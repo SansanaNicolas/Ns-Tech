@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body class="body">
+
+    <header class="header">
+            <div class="box--logo">
+                <img src="../images/ns-tech-logo.png" alt="logo" class="header--logo">
+            </div>
+    
+           <div class="box--nav">
+                <button class="nav--toggle">
+                <i class="fas fa-bars"></i>
+                </button>
+            </div>
+    
+            <nav class="nav">
+                 <ul class="nav__menu">
+                    <li class="nav__menu--item"><a href="../index.html" class="nav--menu--link">Home</a></li>
+                    <li class="nav__menu--item"><a href="products.html" class="nav--menu--link">Products</a></li>
+                    <li class="nav__menu--item"><a href="blog.html" class="nav--menu--link">Blog</a></li>
+                    <li class="nav__menu--item"><a href="faq.html" class="nav--menu--link">FAQ</a></li>
+                    <li class="nav__menu--item"><a href="contact.html" class="nav--menu--link">Contact</a></li>
+                </ul>
+            </nav>
+        
+
+    </header>
+
+    <main class="main">
+
+        <form action="" class="main__formulario">
+
+            <div>
+                <label for="name">Name:</label>
+    
+                <input type="text" id="name" name="name" placeholder="Enter your name..." class="main__label--colortext">
+            </div>
+                
+            
+            <div>
+                <label for="surname">Last name:</label>
+    
+                <input type="text" id="surname" name="surname" placeholder="Enter your last name..." class="main__label--colortext">
+            </div>
+                
+    
+            <div>
+                <label for="email">Email:</label>
+    
+                <input type="text" id="email" name="Email" placeholder="Enter your e-mail..." class="main__label--colortext">
+            </div>
+    
+            <div>
+                <label for="reason">Reason:</label>
+                <select name="reason" id="reason" class="main__label--colortext">
+                    <option value="questions">Question/s</option>
+                    <option value="estimate">Estimate for a build</option>
+                    <option value="suggestions">Suggestion/s</option>
+                </select>
+            </div>
+            
+    
+    
+    
+            <div>
+                <label for="comment" class="main__comment--text" >Enter an additional comment...</label>
+    
+                <textarea name="comment" id="comment" cols="32" rows="10" class="main__comment--area" ></textarea>
+    
+                <div>
+                    <button class="main__boton">Clean</button>
+                    <button class="main__boton">Send</button>
+                </div>
+            </div>
+    
+
+        </form>
+        
+
+        <div class="mapa">
+
+            <p class="mapa__text"> Location </p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1611.0019786361943!2d-115.13658801365578!3d36.14211691511429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x978d12e5ab72a76e!2zMzbCsDA4JzMyLjIiTiAxMTXCsDA4JzA1LjciVw!5e0!3m2!1ses-419!2sar!4v1649369403335!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa__map"></iframe>
+        </div>
+
+    </main>
+
+    
+    <footer class="footer">
+
+        <div class= "footer__derechos">
+            <h5>NS Tech 2022, all rights reserved.</h5>
+       </div>
+        
+        <ul class="footer__iconos">
+           <li>
+               <a href="https://www.facebook.com"><img src="../images/icon-face.ico" alt="icono-de-fb" class="footer__iconos--prop"></a>
+           </li>
+
+           <li>
+               <a href="https://www.instagram.com"><img src="../images/icon-insta.ico" alt="icono-de-instagram" class="footer__iconos--prop"></a>
+           </li>
+       </ul>
+       
+    </footer>
+</body>
+</html>
