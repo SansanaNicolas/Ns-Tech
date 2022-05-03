@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="../css/styles.css">
 
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
@@ -41,33 +45,33 @@
 
     </header>
 
-    <main class="main">
+    <main class="main__contact">
 
         <form action="" class="main__formulario">
 
             <div>
                 <label for="name">Name:</label>
     
-                <input type="text" id="name" name="name" placeholder="Enter your name..." class="main__label--colortext">
+                <input type="text" id="name" name="name" placeholder="Enter your name..." class="form-control">
             </div>
                 
             
             <div>
                 <label for="surname">Last name:</label>
     
-                <input type="text" id="surname" name="surname" placeholder="Enter your last name..." class="main__label--colortext">
+                <input type="text" id="surname" name="surname" placeholder="Enter your last name..." class="form-control">
             </div>
                 
     
             <div>
                 <label for="email">Email:</label>
     
-                <input type="text" id="email" name="Email" placeholder="Enter your e-mail..." class="main__label--colortext">
+                <input type="text" id="email" name="Email" placeholder="Enter your e-mail..." class="form-control">
             </div>
     
             <div>
                 <label for="reason">Reason:</label>
-                <select name="reason" id="reason" class="main__label--colortext">
+                <select name="reason" id="reason" class="form-control"class="main__label--colortext">
                     <option value="questions">Question/s</option>
                     <option value="estimate">Estimate for a build</option>
                     <option value="suggestions">Suggestion/s</option>
@@ -80,11 +84,11 @@
             <div>
                 <label for="comment" class="main__comment--text" >Enter an additional comment...</label>
     
-                <textarea name="comment" id="comment" cols="32" rows="10" class="main__comment--area" ></textarea>
+                <textarea name="comment" id="comment" cols="10" rows="5" class="form-control" ></textarea>
     
                 <div>
-                    <button class="main__boton">Clean</button>
-                    <button class="main__boton">Send</button>
+                    <input class="btn btn-light" type="reset" value="Reset">
+                    <input class="btn btn-light" type="submit" value="Submit">
                 </div>
             </div>
     
@@ -102,22 +106,35 @@
     </main>
 
     
-    <footer class="footer">
-
-        <div class= "footer__derechos">
-            <h5>NS Tech 2022, all rights reserved.</h5>
-       </div>
-        
-        <ul class="footer__iconos">
-           <li>
-               <a href="https://www.facebook.com"><img src="../images/icon-face.ico" alt="icono-de-fb" class="footer__iconos--prop"></a>
-           </li>
-
-           <li>
-               <a href="https://www.instagram.com"><img src="../images/icon-insta.ico" alt="icono-de-instagram" class="footer__iconos--prop"></a>
-           </li>
-       </ul>
-       
-    </footer>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+          </section>
+          <!-- Section: Social media -->
+        </div>
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright: NS Tech
+        </div>
+      </footer>
 </body>
 </html>
