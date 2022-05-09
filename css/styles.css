@@ -21,12 +21,17 @@ li {
 
 
 .header {
-    background-color: rgba(0, 0, 0, 0.479);
-    width: 100%;
-    height: 80px;
     display: flex;
+    background-color: blue;
+    height: 80px;
     justify-content: space-around;
 
+}
+
+.box--logo {
+    display: flex;
+    border-radius: 35px;
+    
 }
 
 .nav__menu {
@@ -37,14 +42,6 @@ li {
 
 }
 
-.box--logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 35px;
-    display: flex;
-}
-
-
 
 .nav__menu--item {
     text-transform: uppercase;
@@ -53,7 +50,7 @@ li {
 
 .nav--menu--link {
     border-radius: 100px;
-    padding: 8px 12px;
+    padding: 8px;
 
 }
 
@@ -118,8 +115,8 @@ h5, h2 {
 }
 
 .video__config {
-    width: 725px;
-    height: 400px;
+    width: 80%;
+    height: 100%;
 
 }
 
@@ -164,10 +161,6 @@ h5, h2 {
 
 }
 
-.mapa__text {
-
-
-}
 
 .main__boton {
     position: relative;
@@ -188,7 +181,7 @@ h5, h2 {
   .main__index {
       display: grid;
       padding: 1rem;
-      grid-column-gap: 1rem;
+      grid-column-gap: 0,5rem;
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: 
       "ele1 ele1"
@@ -198,6 +191,14 @@ h5, h2 {
       "ele2 ele4"
       ;
     
+  }
+
+  .video__1 {
+      grid-area: ele3;
+  }
+
+  .video__2 {
+      grid-area: ele4;
   }
 
 
@@ -342,17 +343,15 @@ h5, h2 {
 
   /* MEDIA QUERIES */
 
-  @media screen and (max-width: 769px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
       
-    .nav__menu {
+    .nav {
         display: none;
-    }
 
+    }
     .box--logo {
         height: 70px;
-        position: absolute;
         margin-top: 5px;
-        left: 200px;
         transition: transform .2s;
         
     }
@@ -364,40 +363,41 @@ h5, h2 {
     .navbar {
         display: block;
         position: absolute;
-        margin-top: 15px;
+        margin-top: 10px;
         right: 50px;
         
     }
 
     .header {
         position: flex;
+        justify-content: space-around;
         
     }
 
     
     .main__index {
-        width: 100%;
         display: grid;
-        grid-template-columns: 1, 1fr;
+        grid-template-columns: repeat(2,1fr);
         grid-template-areas: 
-        "ele1"
+        "ele1 ele1"
         "ele2"
         "ele2"
         "ele3"
         "ele3"
         "ele4"
-        "ele4";
+        "ele4"
+        ;
     }
 
     .video__config {
-        width: 500px;
-        height: 500px;
+        width: 100%;
+        height: 100%;
     }
 
 
   }
 
-  @media screen and (max-width: 410px) {
+  @media screen and (max-width: 767px) {
 
     .body {
           background-color: black;
@@ -406,7 +406,7 @@ h5, h2 {
       }
     
     .box--logo {
-        height: 40px;
+        height: 45px;
         position: absolute;
         margin-top: 15px;
         left: 20px;
@@ -422,8 +422,6 @@ h5, h2 {
         position: absolute;
         margin-top: 10px;
         right: 50px;
-        
-
     }
 
     .header {
@@ -432,20 +430,23 @@ h5, h2 {
     }
     .main__index {
         display: grid;
-        grid-template-columns: 1, 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
         "ele1"
         "ele2"
         "ele2"
         "ele3"
         "ele3"
+        "ele3"
         "ele4"
-        "ele4";
+        "ele4"
+        "ele4"
+        ;
     }
 
     .video__config {
-        width: 300px;
-        height: 300px;
+        width: 95%;
+        height: 95%;
     }
 
     .nav__menu {
