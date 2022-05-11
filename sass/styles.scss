@@ -1,0 +1,346 @@
+@import '../components/header';
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: rgb(7, 7, 7);
+}
+
+
+a {
+  color: #EB1DEF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 3px 4px 3px black;
+}
+
+p {
+  color: aliceblue;
+  font-style: oblique;
+}
+
+h5, h2 {
+  color: aliceblue;
+}
+
+/* INDEX   */
+.main__subtitulo--1 {
+  grid-area: ele1;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(#840f86, rgba(204, 199, 204, 0.349));
+}
+
+.main__texto {
+  grid-area: ele2;
+  padding-top: 0px;
+}
+
+.video__config {
+  width: 80%;
+  height: 100%;
+}
+
+.video__1 {
+  grid-area: ele3;
+}
+
+.video__2 {
+  grid-area: ele4;
+}
+
+/* FINALIZA INDEX  */
+.main__formulario {
+  grid-area: main__formulario;
+  color: aliceblue;
+}
+
+.main__label--colortext {
+  color: black;
+  margin: 1px;
+}
+
+.main__boton {
+  color: black;
+  margin-bottom: 30px;
+}
+
+.mapa {
+  display: grid;
+  grid-area: mapa;
+}
+
+.main__boton {
+  position: relative;
+  left: 190px;
+}
+
+.main__comment--area {
+  margin: 0.5rem;
+  display: flex;
+}
+
+/* GRIDS */
+/* GRID INDEX */
+.main__index {
+  display: grid;
+  grid-row-gap: 2rem;
+  grid-column-gap: 1rem;
+  padding-bottom: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "ele1 ele1" "ele2 ele3" "ele2 ele3" "ele2 ele4" "ele2 ele4";
+}
+
+.video__1 {
+  grid-area: ele3;
+}
+
+.video__2 {
+  grid-area: ele4;
+}
+
+/* GRIDS PRODUCTS */
+.main__products {
+  display: grid;
+  gap: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px;
+  grid-template-areas: "ele1 ele1 ele1 ele1" "ele2 ele3 ele4 ele5" "ele2 ele3 ele4 ele5" "ele2 ele3 ele4 ele5" "ele6 ele7 ele8 ele9" "ele6 ele7 ele8 ele9" "ele6 ele7 ele8 ele9";
+}
+
+.galeria__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: solid 2px;
+  border-radius: 5px;
+}
+
+.main__subtitulo--2 {
+  align-self: center;
+  text-align: center;
+  grid-area: ele1;
+  padding-left: 2rem;
+  font-size: 20px;
+}
+
+.producto1 {
+  grid-area: ele2;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.producto2 {
+  grid-area: ele3;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.producto3 {
+  grid-area: ele4;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.producto4 {
+  grid-area: ele5;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.producto5 {
+  grid-area: ele6;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.producto6 {
+  grid-area: ele7;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.producto7 {
+  grid-area: ele8;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.producto8 {
+  grid-area: ele9;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.producto1--title2, .producto1--title3, .producto1--title4, .producto1--title5, .producto1--title6, .producto1--title7, .producto1--title8, .producto1--title9 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.733);
+  padding: 0, 8rem 5rem;
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
+.products__button1 {
+  position: absolute;
+  bottom: 10px;
+  right: 65px;
+  font-size: 20px;
+  font-weight: 550;
+  border-radius: 5px;
+  background-color: rgba(2, 0, 1, 0.993);
+  color: palevioletred;
+}
+
+.products__button2 {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: 550;
+  border-radius: 5px;
+  background-color: rgba(2, 0, 1, 0.993);
+  color: palevioletred;
+}
+
+/* GRID CONTACT */
+.main__contact {
+  display: grid;
+  grid-column-gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "main__formulario mapa" "main__formulario mapa";
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    display: none;
+  }
+
+  .box--logo {
+    height: 70px;
+    margin-top: 5px;
+    transition: transform 0.2s;
+  }
+
+  .box--logo:hover {
+    transform: scale(1, 2);
+  }
+
+  .navbar {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    right: 50px;
+  }
+
+  .header {
+    position: flex;
+    justify-content: space-around;
+  }
+
+  /* INDEX */
+  .main__index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "ele1 ele1" "ele2" "ele2" "ele3" "ele3" "ele4" "ele4";
+  }
+
+  .video__config {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* PRODUCTS*/
+  .main__products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "ele1 ele1" "ele2 ele3" "ele4 ele5 " "ele6 ele7" "ele8 ele9";
+  }
+}
+@media screen and (max-width: 767px) {
+  .body {
+    background-color: black;
+    width: 100%;
+  }
+
+  .box--logo {
+    width: 100%;
+    margin-top: 15px;
+    transition: transform 0.2s;
+  }
+
+  .box--logo:hover {
+    transform: scale(1, 2);
+  }
+
+  .navbar {
+    display: block;
+    margin-top: 20px;
+    right: 5px;
+    position: absolute;
+  }
+
+  .header {
+    position: flex;
+    width: 100%;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  /* GRIDS  */
+  /* MAIN GRID */
+  .main__index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: "ele1" "ele2" "ele2" "ele3" "ele4";
+  }
+
+  .video__config {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* PRODUCTS GRID */
+  .main__products {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 120px;
+    grid-template-areas: "ele1" "ele2" "ele2" "ele3" "ele3" "ele4" "ele4" "ele5" "ele5" "ele6" "ele6" "ele7" "ele7" "ele8" "ele8" "ele9" "ele9";
+  }
+
+  p {
+    color: white;
+  }
+
+  /* CONTACT GRID */
+  .main__contact {
+    display: grid;
+    padding: 3rem;
+    row-gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main__formulario" "mapa";
+  }
+}
+
+/*# sourceMappingURL=styles.scss.map */

@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "probando sass",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass ./sass/styles.scss ./css/styles.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SansanaNicolas/Ns-Tech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SansanaNicolas/Ns-Tech/issues"
+  },
+  "homepage": "https://github.com/SansanaNicolas/Ns-Tech#readme"
+}
