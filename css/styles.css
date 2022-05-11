@@ -431,8 +431,9 @@ h5, h2 {
 
     .navbar {
         display: block;
-        margin-top: 25px;
+        margin-top: 20px;
         right: 5px;
+        position: absolute;
     }
 
     .header {
