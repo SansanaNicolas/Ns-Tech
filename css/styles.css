@@ -10,15 +10,9 @@
 }
 
 
-ul {    
+ul, li {    
     list-style-type: none;
 }
-
-li {
-    list-style-type: none;
-}
-
-
 
 .header {
     display: flex;
