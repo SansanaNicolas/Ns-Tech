@@ -10,15 +10,9 @@
   background-color: rgb(7, 7, 7);
 }
 
-
 a {
-  color: #EB1DEF;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  text-shadow: 3px 4px 3px black;
 }
-
 p {
   color: aliceblue;
   font-style: oblique;
@@ -231,10 +225,21 @@ h5, h2 {
   color: palevioletred;
 }
 
+// GRID BLOG
+
+.main__blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
 // GRID FAQ
 .main__faq {
   padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-top: 5rem;
   display: grid;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
@@ -363,6 +368,11 @@ h5, h2 {
     color: white;
   }
 
+  // GRID BLOG
+  .main__blog{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   // GRID FAQ
 .main__faq {
   padding-bottom: 1rem;

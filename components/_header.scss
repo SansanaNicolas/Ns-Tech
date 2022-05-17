@@ -30,9 +30,15 @@ ul, li {
   .nav--menu--link {
     border-radius: 100px;
     padding: 8px;
+    color: #EB1DEF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 3px 4px 3px black;
   
     &:hover {
       background-color: rgba(235, 29, 239, 0.3490196078);
+      color: aliceblue;
       transition: 0.5s;
     }
   
