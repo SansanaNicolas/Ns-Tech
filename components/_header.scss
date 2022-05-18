@@ -4,7 +4,7 @@ ul, li {
   
   .header {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: $bgColor;
     height: 80px;
     justify-content: space-around;
   }
@@ -30,7 +30,7 @@ ul, li {
   .nav--menu--link {
     border-radius: 100px;
     padding: 8px;
-    color: #EB1DEF;
+    color: $nsColor;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
@@ -46,7 +46,7 @@ ul, li {
   
   
   .nav--toggle {
-    color: #EB1DEF;
+    color: $nsColor;
     background: none;
     border: none;
     font-size: 30px;
