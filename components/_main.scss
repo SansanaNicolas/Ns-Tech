@@ -1,0 +1,242 @@
+// INDEX
+
+.main__index {
+
+    .main__texto {
+        grid-area: ele1;
+        font-size: 23px;
+      }
+
+      .video__1 {
+        grid-area: ele2;
+      }
+      
+      .video__2 {
+        grid-area: ele3;
+      }
+      
+      .video__3 {
+        grid-area: ele4;
+      }
+
+      .video__config {
+        width: 80%;
+        height: 100%;
+      }
+
+
+}
+
+// PRODUCTS
+
+.main__products {
+    .galeria__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: solid 2px;
+        border-radius: 5px;
+      }
+      
+      .main__subtitulo--2 {
+        align-self: center;
+        text-align: center;
+        grid-area: ele1;
+        padding-left: 2rem;
+        font-size: 20px;
+      }
+      
+      .producto1 {
+        grid-area: ele2;
+        display: flex;
+        position: relative;
+        justify-content: center;
+      }
+      
+      .producto2 {
+        grid-area: ele3;
+        display: flex;
+        position: relative;
+        justify-content: center;
+      }
+      
+      .producto3 {
+        grid-area: ele4;
+        display: flex;
+        position: relative;
+        justify-content: center;
+      }
+      
+      .producto4 {
+        grid-area: ele5;
+        display: flex;
+        position: relative;
+        justify-content: center;
+      }
+      
+      .producto5 {
+        grid-area: ele6;
+        display: flex;
+        position: relative;
+        justify-content: center;
+      }
+      
+      .producto6 {
+        grid-area: ele7;
+        display: flex;
+        position: relative;
+        justify-content: center;
+      }
+      
+      .producto7 {
+        grid-area: ele8;
+        display: flex;
+        position: relative;
+        justify-content: center;
+      }
+      
+      .producto8 {
+        grid-area: ele9;
+        display: flex;
+        position: relative;
+        justify-content: center;
+      }
+      
+      .producto1--title2, .producto1--title3, .producto1--title4, .producto1--title5, .producto1--title6, .producto1--title7, .producto1--title8, .producto1--title9 {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.733);
+        padding: 0, 8rem 5rem;
+        border-radius: 3px;
+        margin-top: 50px;
+      }
+      
+      .products__button2 {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-size: 20px;
+        font-weight: 550;
+        border-radius: 5px;
+        background-color: rgba(2, 0, 1, 0.993);
+        color: palevioletred;
+      }
+}
+
+// FAQ
+
+.main__faq {
+    
+    .faq--uno, .faq--dos, .faq--tres, .faq--cuatro, .faq--cinco, .faq--seis, .faq--siete, .faq--ocho, .faq--nueve, .faq--diez {
+        border: 5px solid #bd19c0;
+        border-radius: 10px;
+    }
+
+}
+
+// CONTACT
+
+.main__contact {
+    .main__formulario {
+        grid-area: main__formulario;
+        color: aliceblue;
+      }
+      
+      .main__label--colortext {
+        color: black;
+        margin: 1px;
+      }
+      
+      .main__boton {
+        color: black;
+        margin-bottom: 30px;
+      }
+      
+      .mapa {
+        display: grid;
+        grid-area: mapa;
+      }
+      
+      .mapa__text {
+        font-size: 35px;
+      }
+      
+      .main__boton {
+        position: relative;
+        left: 190px;
+      }
+      
+      .main__comment--area {
+        margin: 0.5rem;
+        display: flex;
+      }
+
+}
+
+
+        /* GRIDS */
+        /* GRID INDEX */
+        .main__index {
+            display: grid;
+            padding-top: 5rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-bottom: 10rem;
+            row-gap: 5rem;
+            grid-column-gap: 1rem;
+            grid-template-rows: 50px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "ele1 ele2" 
+            "ele1 ele2"
+            "ele4 ele3" 
+            "ele4 ele3"
+            "ele4 ele3"
+            "ele4 ele3"
+            "ele4 ele3"
+        ;
+        }
+        
+        
+        /* GRIDS PRODUCTS */
+        .main__products {
+            display: grid;
+            gap: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-bottom: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px;
+            grid-template-areas: "ele1 ele1 ele1 ele1" "ele2 ele3 ele4 ele5" "ele2 ele3 ele4 ele5" "ele2 ele3 ele4 ele5" "ele6 ele7 ele8 ele9" "ele6 ele7 ele8 ele9" "ele6 ele7 ele8 ele9";
+        }
+        
+        // GRID BLOG
+        
+        .main__blog {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+            padding: 2rem;
+            padding-top: 5rem;
+        }
+        
+        // GRID FAQ
+        .main__faq {
+            padding-bottom: 1rem;
+            padding-top: 5rem;
+            display: grid;
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        /* GRID CONTACT */
+        .main__contact {
+            display: grid;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            padding-left: 10rem;
+            grid-column-gap: 5rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "main__formulario mapa" "main__formulario mapa";
+        }
