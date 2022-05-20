@@ -1,0 +1,11 @@
+.main__title {
+    align-self: center;
+    text-align: center;
+    grid-area: ele1;
+    padding-top: 3rem;
+  }
+
+@mixin estilos($justifyContent) {
+    display: flex;
+    justify-content: $justifyContent;
+}

@@ -1,8 +1,8 @@
   .header {
-    display: flex;
+    @include estilos(space-around);
     background-color: $headerColor;
     height: 80px;
-    justify-content: space-around;
+
     
     ul, li {
       list-style-type: none;

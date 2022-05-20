@@ -144,7 +144,10 @@
                 padding: 3rem;
                 row-gap: 3rem;
                 grid-template-columns: 1fr;
-                grid-template-areas: "main__formulario" "mapa";
+                grid-template-areas: 
+                "ele1"
+                "main__formulario" 
+                "mapa";
                 }
             
                 .main__formulario {
