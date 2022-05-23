@@ -1,40 +1,46 @@
 // INDEX
 
 .main__index {
-
-    .main__texto {
+    .main__index--grid {
+      .main__texto {
         grid-area: ele1;
-        font-size: 23px;
+        font-size: 25px;
       }
 
       .video__1 {
         grid-area: ele2;
       }
+    }
+    
       
-      .video__2 {
-        grid-area: ele3;
-      }
-      
-      .video__3 {
-        grid-area: ele4;
-      }
-
       .video__config {
-        width: 80%;
+        width: 100%;
         height: 100%;
       }
 
+      $map: (
+        rog: #EB1DEF
+       );
+      
+       .main__index--asusrog--title {
+          color: map-get($map, rog);
+       }
 
+
+      .main__index--asusrog--title {
+        display: flex;
+        justify-content: center;
+        grid-area: ele3;
+      }
+
+      .main__index--asusrog--story {
+        grid-area: ele4;
+      }
+      
+      .main__index--asusrog--video {
+        grid-area: ele5;
+      }
 }
-
-// PRODUCTS
-
-  // .main__title {
-  //   align-self: center;
-  //   text-align: center;
-  //   grid-area: ele1;
-  //   padding-top: 3rem;
-  // }
 
 .main__products {
     .galeria__img {
@@ -180,25 +186,42 @@
 
         /* GRIDS */
         /* GRID INDEX */
-        .main__index {
+        .main__index--grid {
             display: grid;
-            padding-top: 5rem;
-            padding-left: 5rem;
-            padding-right: 5rem;
-            padding-bottom: 10rem;
+            padding: 5rem;
             row-gap: 5rem;
             grid-column-gap: 1rem;
-            grid-template-rows: 50px;
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas: 
             "ele1 ele2" 
             "ele1 ele2"
-            "ele4 ele3" 
-            "ele4 ele3"
-            "ele4 ele3"
-            "ele4 ele3"
-            "ele4 ele3"
-        ;
+            "ele1 ele2"
+            "ele1 ele2"
+            "ele1 ele2"
+            "ele1 ele2"
+            ;
+        }
+
+        .main__index--asusrog {
+          display: grid;
+          padding-left: 5rem;
+          padding-right: 5rem;
+          padding-top: 5rem;
+          padding-bottom: 10rem;
+          row-gap: 5rem;
+          grid-column-gap: 1rem;
+          grid-template-columns: 1fr;
+          grid-template-areas: 
+          "ele3"
+          "ele4"
+          "ele5"
+          "ele5"
+          "ele5"
+          "ele5"
+          "ele5"
+          "ele5"
+          "ele5"
+          ;
         }
         
         

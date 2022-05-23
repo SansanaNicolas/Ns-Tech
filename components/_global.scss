@@ -9,3 +9,11 @@
     display: flex;
     justify-content: $justifyContent;
 }
+
+$map: (
+  rog: #EB1DEF
+ );
+
+ .main__index--asusrog--title--prop {
+    color: map-get($map, rog);
+ }
