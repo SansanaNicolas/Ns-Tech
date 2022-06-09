@@ -3,60 +3,33 @@
     background-color: $headerColor;
     height: 80px;
 
-    
-    ul, li {
-      list-style-type: none;
-    }
 
     .box--logo {
       display: flex;
       border-radius: 35px;
       transition: transform 0.2s;
     }
-
-    .nav__menu {
-      display: flex;
-      height: 80px;
-      justify-content: center;
-      align-items: center;
     
-      &--item {
-          text-transform: uppercase;
-          .nav--menu--link {
-            border-radius: 100px;
-            padding: 8px;
-            color: $nsColor;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 20px;
-            text-shadow: 3px 4px 3px black;
-          
-            &:hover {
-              background-color: rgba(235, 29, 239, 0.3490196078);
-              color: aliceblue;
-              transition: 0.5s;
+  
+    .navbar {
+      border: none;
+      font-size: 30px;
+
+      .container-fluid {
+        .collapse {
+          .navbar-nav {
+            .nav-item {
+              .nav-link {
+                color: $nsColor;
+              }
             }
           }
+        }
       }
-    }
-    
-    .nav--toggle {
-      color: $nsColor;
-      background: none;
-      border: none;
-      font-size: 30px;
-      padding: 0 20px;
-      display: none;
-    }
-    
-    .navbar {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 30px;
     }
 
   }
+  
   
   
   

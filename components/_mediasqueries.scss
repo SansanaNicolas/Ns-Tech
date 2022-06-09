@@ -8,12 +8,11 @@
             justify-content: space-around;
 
             .nav {
-                display: none;
+                display: block;
                 }
         
                 .navbar {
                     display: block;
-                    position: absolute;
                     margin-top: 20px;
                     right: 50px;
                     }
@@ -23,7 +22,6 @@
                 margin-top: 5px;
                 transition: transform 0.2s;
                 }
-
         }
 
         /* INDEX */
@@ -67,9 +65,8 @@
                     width: 100%;
 
                     .nav {
-                        display: none;
+                        display: block;
                     }
-
                     .navbar {
                         display: block;
                         margin-top: 20px;
