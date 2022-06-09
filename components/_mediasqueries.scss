@@ -46,7 +46,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "ele1 ele1" "ele2 ele3" "ele4 ele5 " "ele6 ele7" "ele8 ele9";
         }
-    
+        
+        .main__title {
+            margin-top: -200px;
+        }
+
+        /*contact*/ 
         .main__contact {
         display: grid;
         padding-left: 2rem;
@@ -108,6 +113,10 @@
                 grid-template-areas: "ele1" "ele2" "ele2" "ele3" "ele3" "ele4" "ele4" "ele5" "ele5" "ele6" "ele6" "ele7" "ele7" "ele8" "ele8" "ele9" "ele9";
                 }
             
+                .main__title {
+                    margin-top: -160px;
+                }
+
                 p {
                 color: white;
                 }
